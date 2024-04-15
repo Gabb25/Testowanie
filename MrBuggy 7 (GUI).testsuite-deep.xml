@@ -1,0 +1,2808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="26" name="MrBuggy 7 (GUI)" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="27" name="Zakładanie pierwszego konta oraz logowanie do aplikacji MrBuggy 7" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="33" name="Niepoprawne wysłanie formularza pierwszego konta administratora">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Pierwsze uruchomienie aplikacji MrBuggy 7 (czysta baza danych)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się formularz rejestracji pierwszego administatora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy puste pola w formularzu &quot;Creating the first admin&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod każdym niewypełnionym polem pojawia się odpowiedni komunikat walidacyjny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="40" name="Poprawne tworzenie pierwszego konta administratora">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Pierwsze uruchomienie aplikacji MrBuggy 7 (czysta baza danych)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się formularz rejestracji pierwszego administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Tworzymy pierwszego administratora wypełniając wymagane pola:</p>
+
+<ul>
+	<li>Username: admin</li>
+	<li>Password: admin!2</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne założenie konta pierwszego administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="45" name="Próba logowania przy pustym formularzu">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uruchamiamy aplikację MrBuggy 7</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawias się okno logowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W formularzu logowania pozostawiamy puste pola</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk logowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod każdym niewypełnionym polem pojawia się odpowiedni komunikat walidacyjny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="50" name="Próba logowania z podaniem błędnego hasła">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uruchamiamy aplikację MrBuggy 7</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się okno logowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Podajemy login oraz błędne hasło:</p>
+
+<ul>
+	<li>Username: admin</li>
+	<li>Password: admin!3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk logowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat walidacyjny informujący o błędnym haśle i/lub loginie</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="55" name="Poprawne logowanie do aplikacji">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uruchamiamy aplikację MrBuggy 7</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się okno logowania</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W formularzu logowania podaj poprawne dane użytkownika:</p>
+
+<ul>
+	<li>Username: admin</li>
+	<li>Password: admin!2</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk logowania</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne logowanie do aplikacji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="60" name="Obsługa konta administratora" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="61" name="Poprawne dodawanie jednostek">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Units&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Przejście do &quot;Units&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz dodania nowej jednostki</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy nazwę jednostk</p>
+
+<ul>
+	<li>Name: TestUnit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowej jednostki do słownika jednostek</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="67" name="Niepoprawne dodawanie jednostek">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Units&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Przejście do &quot;Units&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz dodania nowej jednostki</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy puste pole w miejscu na nazwę jednostki</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się komunikat walidacyjny o obowiązkowym polu do wypełnienia</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="73" name="Poprawne dodawanie dostawców">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Providers&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka z listą dostawc&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy nazwę dostawcy oraz cenę:</p>
+
+<ul>
+	<li>Name: ProviderA</li>
+	<li>Price: 500</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego dostawcy do słownika dostawc&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="79" name="Niepoprawne dodawanie dostawców">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Providers&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka z listą dostawc&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy niewypełniony formularz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się komunikat walidacyjny o obowiązkowych polach do wypełnienia</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="86" name="Niepoprawne dodawanie żądań zmian (CR - Change Request)">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka z listą wszystkich CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New CR&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy puste pola w formularzu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wiadomości walidacyjne wyświetlają pod wszystkimi obowiązkowymi polami w formularzu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="92" name="Poprawne dodawanie żądań zmian (CR - Change Request)">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka z listą wszystkich CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New CR&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy obowiązkowe pola w formularzu:</p>
+
+<ul>
+	<li>Number: 1</li>
+	<li>Name: FirstCR</li>
+	<li>Business case: Bla bla bla</li>
+	<li>Description of change: bla1</li>
+	<li>Financial sources: bla 2</li>
+	<li>Related production errors:</li>
+	<li>Provider: ProviderA</li>
+	<li>End (checkbox): false</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego CR do bazy danych</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="99" name="Poprawne dodawanie nowego pracownika">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednej jednostki</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New employee&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy formularz:</p>
+
+<ul>
+	<li>Username: Emplo1</li>
+	<li>First name: Marek</li>
+	<li>Last name: Markowski</li>
+	<li>Email: marek@markowski.com</li>
+	<li>Phone number: 222333444</li>
+	<li>Unit: TestUnit2</li>
+	<li>Status: Active</li>
+	<li>Password: emp12#</li>
+	<li>Confirm password: emp12#</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego pracownika do systemu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="105" name="Poprawne dodawanie nowego administratora">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New admin&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy formularz:</p>
+
+<ul>
+	<li>Username: admin2</li>
+	<li>First name: Jan</li>
+	<li>Last name: Kowalski</li>
+	<li>Email: jan@kowalski.com</li>
+	<li>Phone number: 11122233</li>
+	<li>Status: Active</li>
+	<li>Password: admin1@</li>
+	<li>Confirm password: admin1@</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego administratora do systemu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="112" name="Niepoprawne dodawanie nowego administratora">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New admin&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy pusty formularz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod każdym niewypełnionym polem pojawia się komunikat walidacyjny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="118" name="Niepoprawne dodawanie nowego pracownika">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New employee&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy pusty formularz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod każdym niewypełnionym polem pojawia się komunikat walidacyjny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="125" name="Poprawne dodawanie nowego zablokowanego pracownika">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednej jednostki</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New employee&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy formularz:</p>
+
+<ul>
+	<li>Username: Emplo2</li>
+	<li>First name: Wojtek</li>
+	<li>Last name: Wojtkowski</li>
+	<li>Email: wojtek@wojtkowski.com</li>
+	<li>Phone number: 333444555</li>
+	<li>Unit: TestUnit2</li>
+	<li>Status: Blocked</li>
+	<li>Password: emp12$</li>
+	<li>Confirm password: emp12$</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego zablokowanego pracownika do systemu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="131" name="Poprawne dodawanie nowego dostawcy (użytkownika)">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednego dostawcy w zakładce &quot;Providers&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New provider&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz nowego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy formularz:</p>
+
+<ul>
+	<li>Username: Prov1</li>
+	<li>First name: Pawel</li>
+	<li>Last name: Pawlowski</li>
+	<li>Email: pawel@pawlowski.com</li>
+	<li>Phone number: 444555666</li>
+	<li>Provider: ProviderA</li>
+	<li>Status: Active</li>
+	<li>Password: prov!23</li>
+	<li>Confirm password: prov!23</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego dostawcy do użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="137" name="Poprawne dodawanie nowego zablokowanego dostawcy (użytkownika)">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednego dostawcy w zakładce &quot;Providers&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New provider&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz nowego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy formularz:</p>
+
+<ul>
+	<li>Username: Prov2</li>
+	<li>First name: Adam</li>
+	<li>Last name: Adamowski</li>
+	<li>Email: adam@adamowski.com</li>
+	<li>Phone number: 444555666</li>
+	<li>Provider: ProviderB</li>
+	<li>Status: Blocked</li>
+	<li>Password: prov1@3</li>
+	<li>Confirm password: prov1@3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego zablokowanego dostawcy do użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="143" name="Niepoprawne dodawanie nowego dostawcy (użytkownika)">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New provider&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy pusty formularz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pod każdym niewypełnionym polem pojawia się komunikat walidacyjny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="149" name="Poprawna zmiana hasła użytkownika">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednego użytkownika</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>&nbsp;</p>
+
+<p>Klikamy w przycisk &quot;Edit&quot; w wierszu użytkownika</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno edycji użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wpisujemy nowe hasło w polu &quot;Password&quot; i &quot;Confrim password&quot;:</p>
+
+<ul>
+	<li>Password: newpas12#</li>
+	<li>Confirm password: newpas12#</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana hasła wybranego użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="155" name="Poprawne blokowanie użytkownika">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednego użytkownika</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Block&quot; w wierszu użytkownika</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne zablokowanie użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="159" name="Poprawne odblokowanie użytkownika">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzenie przynajmniej jednego użytkownika</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Users&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka użytkownik&oacute;w</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Active&quot; w wierszu użytkownika</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne odblokowanie użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="163" name="Poprawna zmiana hasła zalogowanego administratora">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Profile&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno profilu&nbsp;użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Edit&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno edycji użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Uzupełniamy brakujące dane jeśli jeszcze tego nie zrobiliśmy oraz podajemy nowe hasło:</p>
+
+<ul>
+	<li>Email: admin@admin.com</li>
+	<li>Phone number: 999999999</li>
+	<li>Password: admin32!</li>
+	<li>Confirm Password: admin32!</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana hasła zalogowanego administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="170" name="Poprawne wylogowanie z konta administratora">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako administrator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;Logout&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Następuje poprawne wylogowanie z konta administratora</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="173" name="Poprawne wyświetlanie wszystkich CR o statusie &quot;New&quot;">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzony co najmniej jeden CR o statusie &quot;New&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>CR o statusie &quot;New&quot; posiada opcje: &quot;Approve&quot;, &quot;To clarify&quot;, &quot;Reject&quot;, &quot;Clone&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="176" name="Poprawne zatwierdzenie CR">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzony co najmniej jeden CR o statusie &quot;New&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;New&quot; i klikamy w przycisk &quot;Approve&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Status wybranego CR powinien zmienić się na &quot;Approved&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="180" name="Poprawna zmiana statusu CR na &quot;do zatwierdzenia&quot;">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzony co najmniej jeden CR o statusie &quot;New&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;New&quot; i klikamy w przycisk &quot;To clarify&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Dodajemy obowiązkowy komentarz:</p>
+
+<ul>
+	<li>Comment: blam blam blam</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawnie zmieniony status na &quot;To clarify&quot;, zapisany komentarz i wartość &quot;Number of comments&quot; podniesiona o 1</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="185" name="Poprawne odrzucenie CR">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Stworzony co najmniej jeden CR o statusie &quot;New&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;New&quot; i klikamy w przycisk &quot;Reject&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Dodajemy obowiązkowy komentarz:</p>
+
+<ul>
+	<li>Comment: bum bum bum</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawnie odrzucony CR powinien zmienić status na &quot;Rejected&quot;, zapisać wpisany komentarz i podnieść wartość &quot;Number of comments&quot; o 1</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="190" name="Poprawne dodanie publicznego komentarza">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Co najmniej jeden dodany pracownik</li>
+	<li>Co najmniej jeden dodany dostawca (użytkownik)</li>
+	<li>Co najmniej dw&oacute;ch administrator&oacute;w</li>
+	<li>CR stworzony przez pracownika i powiązany z dostawcą przez Status</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR stworzony przez naszego użytkownika klikając w jego nazwę w kolumnie &quot;Name&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno wybranego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W otwartej zakładce &quot;CR view&quot; dodajemy komentarz w polu &quot;Comments&quot; i pozostawiamy pusty checkbox &quot;Private&quot;:</p>
+
+<ul>
+	<li>Comments: Publiczny</li>
+	<li>Private (checkbox): false</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodany komentarz pojawia się w oknie CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto pracownika i wchodzimy w &quot;CR view&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Sprawdzamy czy pojawił się dodany wcześniej komentarz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto dostawcy i powtarzamy poprzedni krok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto drugiego administratora i ponownie wykonujemy krok 5</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="199" name="Poprawne dodanie prywatnego komentarza">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Co najmniej jeden dodany pracownik</li>
+	<li>Co najmniej jeden dodany dostawca (użytkownik)</li>
+	<li>Co najmniej dw&oacute;ch administrator&oacute;w</li>
+	<li>CR stworzony przez pracownika i powiązany z dostawcą przez Status</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR stworzony przez naszego użytkownika klikając w jego nazwę w kolumnie &quot;Name&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno wybranego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W otwartej zakładce &quot;CR view&quot; dodajemy komentarz w polu &quot;Comments&quot; i pozostawiamy pusty checkbox &quot;Private&quot;:</p>
+
+<ul>
+	<li>Comments: Prywatny</li>
+	<li>Private (checkbox): true</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodany komentarz pojawia się w oknie CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto pracownika i wchodzimy w &quot;CR view&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Sprawdzamy czy pojawił się dodany wcześniej komentarz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz nie jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto dostawcy i powtarzamy poprzedni krok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto drugiego administratora i ponownie wykonujemy krok 5</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wcześniej dodany przez administratora komentarz jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="208" name="Poprawne eksportowanie CR o statusie &quot;To order&quot;">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Co najmniej jeden CR o statusie &quot;To order&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W &quot;CRs list&quot; klikamy w przycisk &quot;Export to JSON&quot; lub &quot;Export to JSON&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno eksportowania danych</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W &quot;Export CR&#39;s to JSON&quot; zaznaczamy &quot;Approved&quot; w oknie &quot;Statutes&quot; oraz dostawcę wybranego CR w oknie &quot;Providers&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Export&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wybieramy lokalizację dla wyeksportowanego pliku</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne wyeksportowanie pliku oraz poprawna zmiana statusu z &quot;To order&quot; na &quot;Process&quot;były w statusie &quot;Process&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="215" name="Poprawne eksportowanie CR o statusie &quot;Approved&quot;">
+	<node_order><![CDATA[27]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>Co najmniej jeden CR o statusie &quot;Approved&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W &quot;CRs list&quot; klikamy w przycisk &quot;Export to JSON&quot; lub &quot;Export to JSON&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno eksportowania danych</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W &quot;Export CR&#39;s to JSON&quot; zaznaczamy &quot;Approved&quot; w oknie &quot;Statutes&quot; oraz dostawcę wybranego CR w oknie &quot;Providers&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Export&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wybieramy lokalizację dla wyeksportowanego pliku</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne wyeksportowanie pliku oraz poprawna zmiana statusu z &quot;Approved&quot; na &quot;Forwarded&quot; jeśli wcześniej nie były w statusie &quot;Process&quot; lub na &quot;Process jeśli wcześniej były w statusie &quot;Process&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="222" name="Poprawne akceptowanie wycenionego CR">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>CR o statusie &quot;Priced&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W wierszu z CR o statusie &quot;Priced&quot; klikamy w przycisk &quot;Reject&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno z obowiązkowym formularzem</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy pow&oacute;d odrzucenia:</p>
+
+<ul>
+	<li>Comment: bo tak</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana statusu CR na &quot;Rejected&quot; oraz dodany komentarz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="226" name="Poprawne odrzucenie wycenionego CR">
+	<node_order><![CDATA[29]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>CR o statusie &quot;Priced&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W wierszu z CR o statusie &quot;Priced&quot; klikamy w przycisk &quot;To order&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana statusu CR na &quot;To order&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="231" name="Poprawna automatyczna archiwizacja CR">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako administrator</li>
+	<li>CR o statusie &quot;Draft&quot;</li>
+	<li>CR o statusie &quot;Rejected&quot;</li>
+	<li>CR o statusie &quot;Received&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Automatic archiving&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno automatycznej archiwizacji</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wypełanimy formularz, wpisując w kazdym polu 1, co oznacza jedną minute i klikamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Czekamy 1 minute</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>-</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna archiwizacja CR o statusach: &quot;Draft&quot;, &quot;Rejected&quot; i &quot;Received&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="237" name="Obsługa konta pracownika" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="238" name="Poprawna zmiana hasła zalogowanego pracownika">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Profile&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno profilu zalogowanego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Edit&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno edycji użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy nowe hasło i klikamy przycisk &quot;Save&quot;</p>
+
+<ul>
+	<li>Password: qwerty32!</li>
+	<li>Confirm Password: qwerty32!</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana hasła zalogowanego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="243" name="Poprawne wylogowanie z konta pracownika">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;Logout&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Następuje poprawne wylogowanie z konta pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="246" name="Poprawna edycja profilu pracownika">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Profile&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno profilu zalogowanego pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Edit&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno edycji użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy nowe hasło i klikamy przycisk &quot;Save&quot;</p>
+
+<ul>
+	<li>Username: Empl1</li>
+	<li>First name: Mar</li>
+	<li>Last name: Mark</li>
+	<li>Email: mar@mark.com</li>
+	<li>Phone number: 222333555</li>
+	<li>Unit: TestUnit3</li>
+	<li>Password: emp12#</li>
+	<li>Confirm password: emp12#</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne zapisanie nowych danych pracownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="251" name="Niepoprawne stworzenie nowego CR">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>&nbsp;</p>
+
+<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New CR&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz dodawnia nowego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pozostawiamy puste pola w formularzu i kliamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wiadomości walidacyjne wyświetlają się pod wszystkimi obowiązkowymi polami w formularzu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="256" name="Poprawne stworzenie nowego CR">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>&nbsp;</p>
+
+<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New CR&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz dodawnia nowego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy obowiązkowe pola w formularzu i kliamy przycisk &quot;Save&quot;</p>
+
+<ul>
+	<li>Number: 1</li>
+	<li>Name: FirstCR</li>
+	<li>Business case: Bla bla bla</li>
+	<li>Description of change: bla1</li>
+	<li>Financial sources: onlyfans</li>
+	<li>Related production errors:</li>
+	<li>Provider: ProviderA</li>
+	<li>End (checkbox): false</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne dodanie nowego CR do bazy danych</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="261" name="Poprawne usuwanie CR">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako pracownik</li>
+	<li>Co najmniej jeden CR w CR list</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W &quot;CR list&quot; wybieramy CR, kt&oacute;ry chcemy usunąć i w&nbsp;odpowiednim wierszu, w kolumnie &quot;Actions&quot; klikamy klawisz &quot;Delete&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno dialogowe</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W oknie dialogowym potwierdzamy usunięcie elementu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawne usunięcie wybranego CR z bazy danych</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="266" name="Poprawne wyświetlanie CR stworzonych przez innych pracowników">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Stworzenie co najmniej dw&oacute;ch kont pracownik&oacute;w</li>
+	<li>Stworzenie co najmniej dw&oacute;ch CR na jednym koncie pracownika (B) i co najmniej jednego CR na koncie pracownika (A)</li>
+	<li>Zarchiwizowanie jednego CR stworzonego przez pracownika (B) na koncie administratora</li>
+	<li>Zalogowanie na koncie pracownika (B)</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawnie wyświetlają się wszystkie CR stworzone przez zalogowanego pracownika z wyjątkiem zarchiwizowanego</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="269" name="Poprawne działanie zakończonego CR">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako pracownik</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;New CR&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się formularz tworzenia nowego CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Wypełniamy obowiązkowe pola w formularzu:</p>
+
+<ul>
+	<li>Number: 2</li>
+	<li>Name: SecondCR</li>
+	<li>Business case: Blah blah blah</li>
+	<li>Description of change: blah1</li>
+	<li>Financial sources: blah2</li>
+	<li>Related production errors:</li>
+	<li>Provider: ProviderA</li>
+	<li>End (checkbox): true</li>
+</ul>
+
+<p>Klikamy w przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zakończony CR zostaje przeniesiony do statusu &quot;Read only&quot;, a jego dalsza edycja nie jest możliwa</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="274" name="Poprawne dodanie publicznego komentarza">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako pracownik</li>
+	<li>Co najmniej jeden dodany dostawca (użytkownik)</li>
+	<li>CR stworzony przez pracownika i powiązany z dostawcą przez Status</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR stworzony przez dostawcę klikając w jego nazwę w kolumnie &quot;Name&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno &quot;CR view&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W otwartej zakładce &quot;CR view&quot; dodajemy komentarz w polu &quot;Comments&quot; i pozostawiamy pusty checkbox &quot;Private&quot;</p>
+
+<ul>
+	<li>Comments: Publiczny2</li>
+	<li>Private (checkbox): true</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>W oknie &quot;CR view&quot; pojawia się dodany komentarz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto administratora i wchodzimy w &quot;CR view&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno &quot;CR view&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Sprawdzamy czy pojawił się dodany wcześniej komentarz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komentarz wcześniej dodany przez pracownika jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto dostawcy i powtarzamy poprzedni krok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komentarz wcześniej dodany przez pracownika jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="282" name="Zatwierdzenie CR o statusie &quot;To Clarify&quot;">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako pracownik</li>
+	<li>CR skierowany do zatwierdzenia przez administratora</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;To clarify&quot; i klikamy w przycisk &quot;Clarify&quot; w wierszu tego CR</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>CR poprawnie zmienił status na &quot;Clarified&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="286" name="Odrzucenie CR o statusie &quot;To Clarify&quot;">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako pracownik</li>
+	<li>CR skierowany do zatwierdzenia przez administratora</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;To clarify&quot; i klikamy w przycisk &quot;Reject&quot; w wierszu tego CR</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>CR poprawnie zmienił status na &quot;Rejected&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="290" name="Obsługa konta dostawcy" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="291" name="Poprawna zmiana hasła zalogowanego dostawcy">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako dostawca</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu wybieramy zakładkę &quot;Profile&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno profilu zalogowanego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Edit&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera sie okno edycji użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Podajemy nowe hasło i klikamy w przycisk &quot;Save&quot;</p>
+
+<ul>
+	<li>Password: qwerty12#</li>
+	<li>Confirm Password: qwerty12#</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>Poprawna zmiana hasła zalogowanego dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="296" name="Poprawne wylogowanie z konta dostawcy">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Zalogowanie jako dostawca</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;Logout&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Następuje poprawne wylogowanie z konta dostawcy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="299" name="Poprawne dodanie publicznego komentarza">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako dostawca</li>
+	<li>Co najmniej jeden dodany pracownik</li>
+	<li>Co najmniej jeden dodatkowy dostawca</li>
+	<li>CR stworzony przez pracownika i powiązany z dostawcą przez Status</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera sie zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR stworzony przez dostawcę klikając w jego nazwę w kolumnie &quot;Name&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno &quot;CR view&quot; dla wybranego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W otwartej zakładce &quot;CR view&quot; dodajemy komentarz w polu &quot;Comments&quot; i pozostawiamy pusty checkbox &quot;Private&quot;</p>
+
+<ul>
+	<li>Comments: Publiczny</li>
+	<li>Private (checkbox): true</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>W oknie &quot;CR view&quot; pojawił się dodany komentarz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto pracownika</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Widoczne jest menu głowne MrBuggy 7</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wchodzimy w &quot;CR view&quot; i sprawdzamy czy pojawił się dodany wcześniej komentarz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; widoczny jest dodany przez dostawcę komenatrz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto dostawcy i powtarzamy poprzedni krok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; widoczny jest dodany przez dostawcę komenatrz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto administratora i ponownie wykonujemy krok 5</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; widoczny jest dodany przez dostawcę komenatrz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="308" name="Poprawne dodanie prywatnego komentarza">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako dostawca</li>
+	<li>Co najmniej jeden dodany pracownik</li>
+	<li>Co najmniej jeden dodatkowy dostawca</li>
+	<li>CR stworzony przez pracownika i powiązany z dostawcą przez Status</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w przycisk &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera sie zakładka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR stworzony przez dostawcę klikając w jego nazwę w kolumnie &quot;Name&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno &quot;CR view&quot; dla wybranego CR</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W otwartej zakładce &quot;CR view&quot; dodajemy komentarz w polu &quot;Comments&quot; i zaznaczamy checkbox &quot;Private&quot;</p>
+
+<p>Comments: Prywatny<br />
+Private (checkbox): true</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W oknie &quot;CR view&quot; pojawił się dodany komentarz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto pracownika</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Widoczne jest menu głowne MrBuggy 7</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Wchodzimy w &quot;CR view&quot; i sprawdzamy czy pojawił się dodany wcześniej komentarz</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; komentarz dodany przez dostawcę nie jest widoczny</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto dostawcy i powtarzamy poprzedni krok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; widoczny jest dodany przez dostawcę komenatrz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Przelogowujemy się na konto administratora i ponownie wykonujemy krok 5</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>W &quot;CR view&quot; widoczny jest dodany przez dostawcę komenatrz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="317" name="Poprawne działanie funkcji wyceny CR">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>Zalogowanie jako dostawca</li>
+	<li>CR o statusie &quot;Forwarded&quot;</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W menu klikamy w zakładkę &quot;CRs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się zakladka CRs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Wybieramy CR o statusie &quot;Forwarded&quot; i w&nbsp;kolumnie &quot;Actions&quot; klikamy w przycisk &quot;Valuation&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Otwiera się okno z obowiązkowym formularzem do wypełnienia</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>W oknie &quot;Valuation CR&quot; wypełniamy obowiązkowe pole w formularzu i naciskamy przycisk &quot;Save&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Po wpisaniu 5 w polu &quot;Man-days&quot; wartość &quot;Amount&quot; w &quot;CR view&quot; powinna wynosić 5 razy wartość &quot;Price&quot; danego CR, a status CR powinien zmienić się na &quot;Priced&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite></testsuite>

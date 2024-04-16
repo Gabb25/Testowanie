@@ -23,5 +23,6 @@ Witaj na moim profilu GitHub! Jestem entuzjastą testowania oprogramowania z cer
 
 Dziękuję za odwiedzenie mojego profilu. Jeśli masz jakiekolwiek pytania lub chciałbyś omówić potencjalną współpracę, skontaktuj się ze mną.
 
-Email: orzempek@gmail.com 
+Email: orzempek@gmail.com
 Numer: 784050509
+
